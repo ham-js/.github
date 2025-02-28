@@ -8,7 +8,7 @@
   const serialDriver = new SerialDriver(usbDriver)
   const ft891Driver = new FT891Driver(serialDriver)
 
-  await ft8991Driver.setVfo(14250000) // 🎉
+  await ft891Driver.setVfo(14250000) // 🎉
 ```
 
 ## Overview
@@ -57,5 +57,7 @@ Our general contribution guidelines are:
 We use the special organisation repository `.github` for tracking the general development of the package (see [issue tracker](https://github.com/ham-js/.github/issues) there).
 
 ## Contributors
+
+* Harm - fixed a typo ♥️
 
 ... github badges here
