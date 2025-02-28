@@ -39,7 +39,7 @@
 
 * ✅ **`ham-js` is tested** - in order to maintain this project in the long-term automated testing is important. It also helps to define and explain interfaces for consumers to understand what the library does.
 
-* * ✅ **`ham-js` is documented** - in order for users to adopt the project into their own software they have to understand how to use it. We document ham-js at ...
+* ✅ **`ham-js` is documented** - in order for users to adopt the project into their own software they have to understand how to use it. We document ham-js at ...
 
 ## Packages
 
