@@ -1,5 +1,16 @@
 # ham-js - the library for all things ham radios
 
+## Example
+
+```typescript
+  const usbDevice = ... // get webusb usbdevice from user
+  const usbDriver = new CP2105Driver(usbDevice)
+  const serialDriver = new SerialDriver(usbDriver)
+  const ft891Driver = new FT891Driver(serialDriver)
+
+  await ft8991Driver.setVfo(14250000) // 🎉
+```
+
 ## Overview
 
 ### 1. Interface ham radios and accessories from the browser or node
@@ -26,10 +37,25 @@
 
 * ✅ **`ham-js` is modular** - each package has a specific responsibility. For example cat commands can be constructed with `ham-js/cat` however this package does not perform any sending via serial ports. **This is to ensure packages of `ham-js` can be used in many contexts, like browsers, servers and embedded devices.**
 
-* ✅ `ham-js`
+* ✅ **`ham-js` is tested** - in order to maintain this project in the long-term automated testing is important. It also helps to define and explain interfaces for consumers to understand what the library does.
+
+* * ✅ **`ham-js` is documented** - in order for users to adopt the project into their own software they have to understand how to use it. We document ham-js at ...
 
 ## Packages
 
 * `ham-js/cat` - vast library of CAT interfaces to ham radio devices, such as ham radios, antennas and amplifiers
 * `ham-js/webusb-serial-drivers` - implements user-space drivers for common usb-to-serial chipsets so browsers can interface them without the need for installing drivers in the host system (meaning you can easily interface devices from phones without the need for building a native application)
 * ...
+
+## Contribution
+
+We appreciate your contribution. Please refer to the individual package repositories for their specific rules regarding contribution.
+
+Our general contribution guidelines are:
+...
+
+We use the special organisation repository `.github` for tracking the general development of the package (see [issue tracker](https://github.com/ham-js/.github/issues) there).
+
+## Contributors
+
+... github badges here
